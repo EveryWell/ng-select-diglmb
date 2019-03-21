@@ -15,4 +15,37 @@ body {
        margin-left: 10px;
     }
   }
+
+  .ng-dropdown-panel {
+    box-shadow: 0 0 4px 0 rgba(6,38,72,0.5);
+    border-radius: 8px;
+    border: none;  
+
+    &.ng-select-bottom {
+      margin-top: 2px;
+    }
+
+    .ng-dropdown-panel-items {
+      .ng-option {
+        // background-color: transparent;
+        margin: 0 10px;
+        color: #343434;
+        font-size: 15px;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid #A1A7AC;
+        }
+      }
+    }
+  }
+
+  &.ng-select-opened {
+
+    &.ng-select-bottom {
+      > .ng-select-container {
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+    }
+  }
 }
